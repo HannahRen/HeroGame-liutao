@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+  <head>  
+    <title>MyHtml.html</title>  
+      
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">  
+    <meta http-equiv="description" content="this is my page">  
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+    <script>  
+        var current = 0;  
+        function turnLeft(){  
+            current = (current-90)%360;  
+            document.getElementById('target').style.transform = 'rotate('+current+'deg)';  
+        }  
+        function turnRight(){  
+            current = (current+90)%360;  
+            document.getElementById('target').style.transform = 'rotate('+current+'deg)';  
+        }  
+    </script>  
+</head>  
+<body>  
+    <img id ="target" src="images/song.png" alt="">  
+    <input value="左转" type="button" onclick="turnLeft()">  
+    <input value="右转" type="button" onclick="turnRight()">  
+</body>  
+</html>  

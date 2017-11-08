@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>《胡莱三国2》——刘涛邀你，一起胡莱！</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="Game.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <script type="text/javascript" src="myjs.js"></script>
+</head>
+
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide one"></div>
+			<div class="swiper-slide two">
+				<div class="play">
+					<audio src="http://cdn.hoolaiimg.com/video/1497859589603.mp3" loop="loop">您的浏览器不支持audio标签</audio>
+					<img src="images/play.png">
+				</div>
+				<div class="two_top">
+					<img src="images/liutaosong.png"><br/>
+					<img src="images/616.png" style="margin-top: 20px">
+					<video src="" width="600" height="330" poster="images/videoimg.png" style="margin-top: 10px" onclick="qidai()">您的浏览器不支持video标签</video>
+				</div>
+				<div class="two_bottom">
+					<div class="music_row1"><ul>
+						<li><a href="https://i.y.qq.com/v8/playsong.html?songid=202808813&source=yqq#wechat_redirect" target="_blank"><img src="images/music1.png"></a></li>
+						<li><a href="http://music.163.com/#/song?id=485347979" target="_blank"><img src="images/music2.png"></a></li>
+						<li><img src="images/music3.png" onclick="qidai()"></li>
+					</ul></div>
+					<div class="music_row2"><ul>
+						<li><a href="http://www.kuwo.cn/yinyue/25474458?catalog=yueku2016" target="_blank"><img src="images/music4.png"></a></li>
+						<li><a href="http://t2.kugou.com/song.html?id=3Kayrb2rwV3" target="_blank"><img src="images/music5.png"></a></li>
+						<li><a href="http://www.xiami.com/song/mSsK1S5c648?spm=a1z1s.3521865.23309997.1.oUzmGI" target="_blank"><img src="images/music6.png"></a></li>
+					</ul></div>
+				</div>
+			</div>
+			<div class="swiper-slide three">
+				<img src="images/live.png" style="margin-top: 100px"><br/>
+				<img src="images/629.png" style="margin-top: 10px">
+				<div class="images"><ul>
+					<li><img src="images/1.png"></li>
+					<li><img src="images/2.png"></li>
+					<li><img src="images/3.png"></li>
+					<li><img src="images/4.png"></li>
+					<li><img src="images/5.png"></li>
+					<li><img src="images/6.png"></li>
+					<li><img src="images/7.png"></li>
+					<li><img src="images/8.png"></li>
+				</ul></div>
+				<img src="images/voterules.png" style="margin-top: 30px"><br/>
+				<img src="images/livevote.png" onclick="qidai()">
+			</div>
+			<div class="swiper-slide four">
+				<img src="images/interact.png" style="margin-top: 100px"><br/>
+				<img src="images/629.png" style="margin-top: 10px"><br/>
+				<div class="four_top">
+					<p>征集地表最幸运玩家，现场观看刘涛直播和刘涛亲密互动</p>
+					<p>还不开来报名！</p>
+				</div>
+				<img src="images/mpk.png" style="margin-top: 10px"><br/>
+				<img src="images/signuprules.png" style="margin-top: 10px"><br/>
+				<img src="images/signup.png" style="margin-top: 10px" onclick="qidai()">
+			</div>
+			<div class="swiper-slide five">
+			    <img src="images/gongce.png" style="margin-top: 100px"><br/>
+				<img src="images/708.png" style="margin-top: 10px"><br/>
+				<img src="images/seeding.png" style="margin-top: 10px"><br/>
+				<img src="images/bottombackground.png" style="margin-top: 10px"><br/>
+				<div class="five_mid">
+					<ul>
+						<li><a href="hlsg2.hulai.com/home/"><img src="images/mguanwang.png"></a></li>
+						<li><a href="https://page.hulai.com/pages/hlsg2/two/75.html?channel=1"><img src="images/mdown.png"></a></li>
+					</ul>
+				</div>
+				<div class="five_bottom">
+					<ul>
+						<li class="guanzhuweixin"><img src="images/guanzhuweixin.png"></li>
+						<li><a href="http://weibo.com/hulaisanguo2"><img src="images/guanzhuweibo.png"></a></li>
+						<li class="fenxiangdao"><img src="images/fenxiangdao.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cover"></div>
+		<div class="QRcode">
+			<img class="QRclose" src="images/close.png"><br/>
+			<img class="QR" src="images/erweima.png">
+		</div>
+		<div class="QRcode">
+			<img class="QRclose" src="images/close.png"><br/>
+			<img class="QR" src="images/erweima.png">
+		</div>
+		<div class="fenxiang">
+			<img class="fenxiangclose" src="images/close.png"><br/>
+			<ul>
+				<li onclick="alert('请使用微信打开进行分享');"><img src="images/enjoywechat.png"></li>
+				<li onclick="shareWeibo()"><img src="images/enjoyweibo.png"></li>
+				<li onclick="sharetoqq()"><img src="images/enjoyqq.png"></li>
+			</ul>
+		</div>
+	</div>
+	<script language="javascript">
+		var mySwiper = new Swiper('.swiper-container',{
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			direction:'vertical'
+		});
+	</script>
+</body>
+
+</html>
